@@ -1,3 +1,6 @@
 [submodule "simulation_program/lib/fieldtrip-20200607"]
 	path = simulation_program/lib/fieldtrip-20200607
 	url = https://github.com/fieldtrip/fieldtrip.git
+[submodule "simulation_program/lib/SEREEGA"]
+	path = simulation_program/lib/SEREEGA
+	url = https://github.com/lrkrol/SEREEGA
