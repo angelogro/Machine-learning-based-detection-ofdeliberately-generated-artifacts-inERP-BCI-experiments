@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+    <TrialSettings>
+        <UserDefined Checked="True">
+            <sbTrialDuration>1</sbTrialDuration>
+            <sbStimulusDuration>0.9999999999999999</sbStimulusDuration>
+            <sbPause>2.0000000000000004</sbPause>
+            <cbRandomizeStimuli>2</cbRandomizeStimuli>
+            <cbP300Simulation>0</cbP300Simulation>
+        </UserDefined>
+        <Random Checked="False"/>
+    </TrialSettings>
+</Data>

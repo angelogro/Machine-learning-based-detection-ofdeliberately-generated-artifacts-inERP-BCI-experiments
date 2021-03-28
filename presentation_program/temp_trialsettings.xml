@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+    <TrialSettings>
+        <GeneralSettings>
+            <sbTrialDuration>1</sbTrialDuration>
+            <sbStimulusDuration>0.2</sbStimulusDuration>
+            <sbPause>0.3</sbPause>
+            <cbRandomizeStimuli>2</cbRandomizeStimuli>
+        </GeneralSettings>
+        <Artifacts Checked="True"/>
+        <ERP Checked="False">
+            <cbProbability>0.4</cbProbability>
+        </ERP>
+    </TrialSettings>
+</Data>

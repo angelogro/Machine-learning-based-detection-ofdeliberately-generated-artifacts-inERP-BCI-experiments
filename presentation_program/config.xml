@@ -1,0 +1,72 @@
+<Data>
+	<Paths>
+		<Designer_File_Folder>UIDesignerFiles</Designer_File_Folder>
+		<Resource_Folder>Resources</Resource_Folder>
+		<ArtifactOrder>/home/angelo/Master_Arbeit/Presentation Program/scp_artifactreject/Settings_ArtifactOrder/_newversion</ArtifactOrder>
+		<TrialSettings>/home/angelo/Master_Arbeit/Presentation Program/scp_artifactreject/Settings_Trial/_newversion</TrialSettings>
+		<ArtifactOrderSettingsDefault>Settings_ArtifactOrder</ArtifactOrderSettingsDefault>
+		<TrialSettingsDefault>Settings_Trial</TrialSettingsDefault>
+		<StimulusFilesDefault>Stimulus_Files</StimulusFilesDefault>
+	</Paths>
+	<ArtefactCategories>
+		<Blinzeln>
+			<ID>9</ID>
+			<Text>Blinzeln</Text>
+			<SymbolFilename>sym_blink.png</SymbolFilename>
+		</Blinzeln>
+		<FussBewegen>
+			<ID>1</ID>
+			<Text>F&#252;&#223;e gegen Boden dr&#252;cken</Text>
+			<SymbolFilename>sym_foot.jpg</SymbolFilename>
+		</FussBewegen>
+		<ZungeGegenGaumen>
+			<ID>2</ID>
+			<Text>Zunge gegen Gaumen dr&#252;cken</Text>
+			<SymbolFilename>sym_tongue.jpg</SymbolFilename>
+		</ZungeGegenGaumen>
+		<ForciertesAtmen>
+			<ID>3</ID>
+			<Text>Forciertes Atmen</Text>
+			<SymbolFilename>sym_breathe.svg</SymbolFilename>
+		</ForciertesAtmen>
+		<ZaehneBeissen>
+			<ID>4</ID>
+			<Text>Z&#228;hne aufeinander bei&#223;en</Text>
+			<SymbolFilename>sym_teeth.jpg</SymbolFilename>
+		</ZaehneBeissen>
+		<AugenVerdrehen>
+			<ID>5</ID>
+			<Text>Augen verdrehen</Text>
+			<SymbolFilename>sym_eye.png</SymbolFilename>
+		</AugenVerdrehen>
+		<LuftAnhalten>
+			<ID>6</ID>
+			<Text>Luft anhalten/pressen</Text>
+			<SymbolFilename>sym_breathe.svg</SymbolFilename>
+		</LuftAnhalten>
+		<NaseRuempfen>
+			<ID>7</ID>
+			<Text>Nase r&#252;mpfen</Text>
+			<SymbolFilename>sym_nose.png</SymbolFilename>
+		</NaseRuempfen>
+		<Schlucken>
+			<ID>8</ID>
+			<Text>Schlucken</Text>
+			<SymbolFilename>sym_swallow.png</SymbolFilename>
+		</Schlucken>
+		<Entspannen>
+			<ID>10</ID>
+			<Text>Entspannen</Text>
+			<SymbolFilename>sym_relax.png</SymbolFilename>
+		</Entspannen>
+	</ArtefactCategories>
+	<TriggerID>
+		<Pause>200</Pause>
+		<Start>102</Start>
+		<StartOddball>250</StartOddball>
+		<StartArtifact>251</StartArtifact>
+		<End>255</End>
+		<Target>200</Target>
+		<NonTarget>201</NonTarget>
+	</TriggerID>
+</Data>
