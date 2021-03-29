@@ -55,8 +55,8 @@ clf = LinearDiscriminantAnalysis(solver='eigen',shrinkage='auto')
 for i,(k,v) in enumerate(cindexes.items()):
     if k in [1,5,9,31]:
         meanconf,stdconf = classifyTargetVsArtifact(clf,mrk_class_a,epo_o_target[:,v,:],epo_a[:,v,:],ivals,epo_t_o)
-        print(f"{k} channels: Mean {meanconf} Std {stdconf}")
-        xaxis = [artifactDict[x] for x in np.unique(mrk_class_a)]
+        #print(f"{k} channels: Mean {meanconf} Std {stdconf}")
+        xaxis = [abbrDict[x] for x in np.unique(mrk_class_a)]
         
         plt.figure(figsize=(10,6))
         df = pd.DataFrame(zip(xaxis*2,["TP"]*6+["TN"]*6,np.concatenate((meanconf[:,0,0],meanconf[:,1,1])),
@@ -72,7 +72,7 @@ clf = LinearDiscriminantAnalysis(solver='eigen',shrinkage='auto')
 for i,(k,v) in enumerate(cindexes.items()):
     if k in [1,5,9,31]:
         meanconf,stdconf = classifyTargetVsArtifacts(clf,mrk_class,epo[:,v,:],ivals,epo_t_o)
-        print(f"{k} channels: Mean {meanconf} Std {stdconf}")
+        #print(f"{k} channels: Mean {meanconf} Std {stdconf}")
         disp=ConfusionMatrixDisplay(meanconf, list(map(lambda x:abbrDict[x],np.unique(mrk_class))))
         plt.figure(figsize=(10,10))
         disp.plot(values_format='.2f',cmap='Blues')
@@ -85,9 +85,9 @@ clf = LinearDiscriminantAnalysis(solver='eigen',shrinkage=1e-7)
 for i,(k,v) in enumerate(cindexes.items()):
     if k in [1,5,9,31]:
         meanconf,stdconf = classifyTargetVsArtifact(clf,mrk_class_a,epo_o_target[:,v,:],epo_a[:,v,:],ivals,epo_t_o)
-        xaxis = [artifactDict[x] for x in np.unique(mrk_class_a)]
+        xaxis = [abbrDict[x] for x in np.unique(mrk_class_a)]
         plt.figure(figsize=(10,6))
-        print(f"{k} channels: Mean {meanconf} Std {stdconf}")
+        #print(f"{k} channels: Mean {meanconf} Std {stdconf}")
         df = pd.DataFrame(zip(xaxis*2,["TP"]*6+["TN"]*6,np.concatenate((meanconf[:,0,0],meanconf[:,1,1])),
                               np.concatenate((stdconf[:,0,0],stdconf[:,1,1]))),columns=["Artifact Type", "Type","Average Rate","std"])
         grouped_barplot(df, "Artifact Type", "Type", "Average Rate", "std",colors=plotcolours,
