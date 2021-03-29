@@ -1,5 +1,18 @@
 # Machine-learning-based-detection-ofdeliberately-generated-artifacts-inERP-BCI-experiments
-Project associated with master thesis of Angelo Groß in cooperation with Neural Information Processing Group (TU Berlin). 
+Project associated with master thesis of Angelo Groß in cooperation with Neural Information Processing Group (TU Berlin).
+
+## Table of contents:
+- [Required Software](#required-software)
+  * [Required Python Packages](#required-python-packages)
+    + [Data Evaluation](#data-evaluation)
+  * [Generating Simulated Data](#generating-simulated-data)
+  * [Stimulus Presentation Program](#stimulus-presentation-program)
+- [Program Execution](#program-execution)
+  * [Executable scripts (Python)](#executable-scripts--python-)
+    + [Evaluation scripts](#evaluation-scripts)
+    + [Other scripts](#other-scripts)
+  * [Executable scripts (MatLab)](#executable-scripts--matlab-)
+- [Running all scripts](#running-all-scripts)
 
 ## Required Software
 The following software will be required in order to locally run the source code in this repository.
@@ -42,5 +55,5 @@ This script generates all the simulation data from chapter 4. The execution time
 - [simulation_program/src/sampledata.m](simulation_program/src/sampledata.m)
 
 ## Running all scripts
-In order to make all scripts it is necessary to access the simulation data, unless you want to repeat the generation process which can last longer than an hour depending on the device you are using.
+In order to run all scripts it is necessary to access the simulation data, unless you want to repeat the generation process which can last longer than an hour depending on the device you are using.
 The zipped simulation data is found [here](https://tubcloud.tu-berlin.de/s/ZNdQ6jcfnJwKDK8) and must be extracted within the [data](data) folder of your local repository.
