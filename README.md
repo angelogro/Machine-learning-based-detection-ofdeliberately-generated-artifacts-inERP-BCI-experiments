@@ -18,7 +18,7 @@ The following packages are required to run the complete project.
 ### Generating Simulated Data
 - [SEREEGA](https://github.com/lrkrol/SEREEGA) (added as submodule to this repository)
 - [Fieldtrip](https://www.fieldtriptoolbox.org/) (added as submodule to this repository)
-#### Stimulus Presentation Program
+### Stimulus Presentation Program
 - [PyQt5](https://pypi.org/project/PyQt5/)
 
 ## Program Execution
@@ -40,3 +40,7 @@ They assess classification accuracies using different ML algorithms
 ### Executable scripts (MatLab)
 This script generates all the simulation data from chapter 4. The execution time can last longer than an hour.
 - [simulation_program/src/sampledata.m](simulation_program/src/sampledata.m)
+
+## Running all scripts
+In order to make all scripts it is necessary to access the simulation data, unless you want to repeat the generation process which can last longer than an hour depending on the device you are using.
+The zipped simulation data is found [here](https://tubcloud.tu-berlin.de/s/ZNdQ6jcfnJwKDK8) and must be extracted within the [data](data) folder of your local repository.
