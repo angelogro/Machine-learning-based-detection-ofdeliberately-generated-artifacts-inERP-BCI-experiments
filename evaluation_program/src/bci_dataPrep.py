@@ -7,7 +7,7 @@ Created on Thu Jan 30 16:07:42 2020
 """
 from calcElectrodePositions import ElectrodePositions
 from scipy import signal
-from wyrm import io
+import wyrmio as io
 from global_vars import measurementFolder,highpass,lowpass,ival,ref_ival,downsample_fac,projectFolder
 import bci_minitoolbox as bci
 import numpy as np
