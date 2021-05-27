@@ -8,7 +8,7 @@ Created on Thu Jan 30 16:07:42 2020
 from calcElectrodePositions import ElectrodePositions
 from scipy import signal
 from wyrm import io
-from global_vars import measurementFolder,highpass,lowpass,ival,ref_ival,downsample_fac
+from global_vars import measurementFolder,highpass,lowpass,ival,ref_ival,downsample_fac,projectFolder
 import bci_minitoolbox as bci
 import numpy as np
 import os
@@ -22,7 +22,7 @@ def load_data(dat,dattype='oddball'):
     erpmarkers = list(filter(lambda x: int(x[1][1:])<200,dat.markers))
     mrk_pos = np.array(erpmarkers)[:,0].astype(np.float).astype(np.uint32)
     cnt =  dat.data.T
-    e = ElectrodePositions(os.path.join('/home/angelo/Daten/Master_Arbeit/Master_Arbeit/Data/','elec32_pos.csv'))
+    e = ElectrodePositions(os.path.join(projectFolder,'data','experiment_data','elec32_pos.csv'))
     
     mnt = np.array(list(map(lambda x:e.getCoord(x),clab)))
     if dattype == 'artifact':
